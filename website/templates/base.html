@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'main.css' %}">
+        <title>ホーム</title>
+    </head>
+    
+    <body>
+        <h1>主页</h1>
+        
+        {% include '_navbar.html' %}
+        {% block main %}
+        此处没有被插槽
+        {% endblock %}
+        {% include '_footer.html'%}
+    </body>
+</html>

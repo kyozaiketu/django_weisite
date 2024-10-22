@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%}<h1>主页</h1>{% endblock %}
+
+
+
+{% block main %}
+<h1>如何使用block标签
+<p>{% now 'Y年m月d日 H时i分' %}</p>
+<img src="{% static 'abc.jpg' %}"/>
+</h1>{% endblock %}
+
+    
+
